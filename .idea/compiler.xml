@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="YunShi" />
+        <module name="YiYan" />
+        <module name="AutoReply" />
+        <module name="TangYuan" />
+        <module name="RepeaterBot" />
+        <module name="AlbionBot" />
+        <module name="LezzBot" />
+        <module name="MCBot" />
+        <module name="MyQQBot" />
+        <module name="FeiYan" />
+        <module name="MainBotAdmin" />
+        <module name="HttpBot" />
+        <module name="NGS" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ChaoXingBot" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

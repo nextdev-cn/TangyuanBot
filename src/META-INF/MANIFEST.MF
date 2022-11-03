@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+org.suyue.TangYuan.Main-Class: org.suyue.bot.org.suyue.TangYuan.Main
+

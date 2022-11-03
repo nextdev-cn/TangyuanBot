@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="brigadier.main">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../brigadier-1.0.18/out/artifacts/brigadier_main_jar/brigadier.main.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
