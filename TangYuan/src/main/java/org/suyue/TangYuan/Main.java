@@ -53,7 +53,7 @@ public class Main implements SuYueBotMod {
 
         if(event.getGroup().getId()==groupId) {
             //自动计算热烈讨论
-            if (event.getTime() - lastMsg <= 60 * 1) discussionCount+=3;
+            if (event.getTime() - lastMsg <= 60 * 1) discussionCount+=2;
             if (event.getTime() - lastMsg <= 60 * 3) discussionCount++;
             else discussionCount = 0;
             lastMsg = event.getTime();
@@ -77,7 +77,7 @@ public class Main implements SuYueBotMod {
                     if(messageStr.indexOf(iterator.next())>=0){
                         event.getGroup().sendMessage(randomNegativeMsg());
                         if(imageList!=null&&imageList.size()>0) event.getGroup().sendMessage(randomImgMsg());
-                        discussionCount = -30;
+                        discussionCount = -40;
                         break;
                     }
                 }
@@ -91,7 +91,7 @@ public class Main implements SuYueBotMod {
             //上传表情包
             if (isAddImage && event.getSender().getId() == imgUploaderId) {
                 if (messageChain.get(1) instanceof Image) {
-                    imageList.add((Image) messageChain.get(0));
+                    imageList.add((Image) messageChain.get(1));
                 } else event.getGroup().sendMessage(new At(event.getSender().getId()).plus("不是图片，汤圆不理你"));
                 isAddImage = false;
             }
@@ -167,7 +167,7 @@ public class Main implements SuYueBotMod {
 
     private Message randomRubbishEmoji(){
         Random r = new Random();
-        switch(r.nextInt(5)){
+        switch(r.nextInt(2)){
             case 0:
                 return (new Face(Face.汪汪).plus(new Face(Face.点赞)));
             case 1:
